@@ -1,0 +1,20 @@
+:host ::ng-deep {
+
+    &.mdc-evolution-chip__graphic.mat-mdc-chip-graphic.ng-star-inserted {
+    display: none;
+    }
+
+    &.mdc-evolution-chip__text-label.mat-mdc-chip-action-label {
+        align-items: center;
+        display: flex;
+        padding-left: 10px;
+    }
+
+    &.mat-mdc-standard-chip.mat-primary.mat-mdc-chip-selected {
+        background-color: blue;
+    }
+}
+
+mat-icon {
+    padding-right: 5px;
+}

@@ -1,11 +1,76 @@
 <div class="main-container">
-  <h3>Datepicker Exemplo</h3>
-  <span>esse é o estilo padrão do datepicker</span>
-  <mat-form-field appearance="fill">
-    <mat-label>Choose a date</mat-label>
-    <input matInput [matDatepicker]="picker" />
-    <mat-hint>MM/DD/YYYY</mat-hint>
-    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
-    <mat-datepicker #picker></mat-datepicker>
-  </mat-form-field>
+  <div class="flex">
+    <h1>Datepicker Exemplo</h1>
+    <h3>Esse é o estilo padrão do datepicker</h3>
+    <mat-form-field appearance="fill">
+      <mat-label>Choose a date</mat-label>
+      <input matInput [matDatepicker]="picker" />
+      <mat-hint>MM/DD/YYYY</mat-hint>
+      <mat-datepicker-toggle
+        matIconSuffix
+        [for]="picker"
+      ></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+  </div>
+  <div class="flex">
+    <h3>Tirando o icone do datepicker</h3>
+    <mat-form-field appearance="fill" class="noIcon">
+      <mat-label>Choose a date</mat-label>
+      <input matInput [matDatepicker]="picker1" />
+      <mat-hint>MM/DD/YYYY</mat-hint>
+      <mat-datepicker-toggle
+        matIconSuffix
+        [for]="picker1"
+      ></mat-datepicker-toggle>
+      <mat-datepicker #picker1></mat-datepicker>
+    </mat-form-field>
+    <br />
+    <span> Primeiro passo é localizar qual a classe que contem o icon. </span>
+    <span>
+      Para isso vamos abrir a ferramenta do desenvolverdor(inspecionar) e
+      selecionar qual parte do componente queremos acessar.
+    </span>
+    <br />
+    <img src="../../../assets/images/datepicker1.PNG" />
+    <br />
+    <span>
+      Agora que sabemos qual a classe devemos modificar, vamos modificar ela no
+      nosso codigo.</span
+    >
+    <span>
+      Para isso vamos criar uma classe no componente e utilizala para acessar a
+      classe interna dele.
+    </span>
+    <img src="../../../assets/images/datepicker2.PNG" />
+    <br />
+    <span>
+      Agora utilizamos o ':host ::ng-deep' + o nome da classe que criamos + o
+      nome da classe que queremos modificar para ter acesso a essa classe
+      interna para aplicar o estilo</span
+    >
+    <img src="../../../assets/images/datepicker3.PNG" />
+  </div>
+  <div class="flex">
+    <h3>Mudando a cor do icon</h3>
+    <mat-form-field appearance="fill" class="icon-color">
+      <mat-label>Choose a date</mat-label>
+      <input matInput [matDatepicker]="picker2" />
+      <mat-hint>MM/DD/YYYY</mat-hint>
+      <mat-datepicker-toggle
+        matIconSuffix
+        [for]="picker2"
+      ></mat-datepicker-toggle>
+      <mat-datepicker #picker2></mat-datepicker>
+    </mat-form-field>
+    <br />
+    <span>
+      Para mudar a cor faremos os mesmos passos, porem ao inves de selecionar a
+      div temos que escolher o button, pois ele que recebe a cor.</span
+    >
+    <img src="../../../assets/images/datepicker4.PNG" />
+    <span> Agora criamos uma classe para aplicar a cor. </span>
+    <img src="../../../assets/images/datepicker5.PNG" />
+    <img src="../../../assets/images/datepicker6.PNG" />
+  </div>
 </div>

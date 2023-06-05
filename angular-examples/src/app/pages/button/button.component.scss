@@ -1,0 +1,12 @@
+.flex{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.button {
+    width: 90px;
+    border: 2px solid white;
+    border-radius: 20px;
+}

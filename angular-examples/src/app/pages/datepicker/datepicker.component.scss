@@ -1,6 +1,14 @@
-.main-container {
+.main-container .flex{
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
+}
+
+:host ::ng-deep .noIcon .mat-mdc-form-field-icon-suffix {
+    display: none;
+}
+
+:host ::ng-deep .icon-color .mat-mdc-icon-button {
+    color: blue;
 }

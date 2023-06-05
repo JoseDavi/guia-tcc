@@ -3,10 +3,17 @@
     <mat-list>
       <mat-list-item><a routerLink="home">Home</a></mat-list-item>
       <mat-list-item><a routerLink="datepicker">Datepicker</a></mat-list-item>
-      <!-- <mat-list-item><a routerLink="home">Sei la</a></mat-list-item> -->
+      <mat-list-item><a routerLink="button">Button</a></mat-list-item>
+      <mat-list-item
+        ><a routerLink="button-toggle">Button Toggle</a></mat-list-item
+      >
+      <mat-list-item><a routerLink="chips">Chips</a></mat-list-item>
+      <mat-list-item><a routerLink="dialog">Dialod</a></mat-list-item>
     </mat-list>
   </mat-sidenav>
   <mat-sidenav-content>
-    <router-outlet></router-outlet>
+    <div class="main-container">
+      <router-outlet></router-outlet>
+    </div>
   </mat-sidenav-content>
 </mat-sidenav-container>
