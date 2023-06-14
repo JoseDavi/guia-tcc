@@ -1,12 +1,26 @@
-.flex{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+.flex {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0px 20%;
+  align-items: center;
+}
+
+button {
+  width: 90px;
 }
 
 .button {
-    width: 90px;
-    border: 2px solid white;
-    border-radius: 20px;
+  border: 2px solid white;
+  border-radius: 20px;
+}
+
+h3 {
+  align-self: center;
 }

@@ -5,35 +5,36 @@ import { DatepickerComponent } from './pages/datepicker/datepicker.component';
 import { ButtonComponent } from './pages/button/button.component';
 import { ButtonToggleComponent } from './pages/button-toggle/button-toggle.component';
 import { ChipsComponent } from './pages/chips/chips.component';
-import { DialogComponent } from './pages/dialog/dialog.component';
 
 const routes: Routes = [
   {
-    path: "", component:HomeComponent
+    path: '',
+    component: HomeComponent,
   },
   {
-    path: "home", component:HomeComponent 
+    path: 'home',
+    component: HomeComponent,
   },
   {
-    path: "datepicker", component:DatepickerComponent 
+    path: 'datepicker',
+    component: DatepickerComponent,
   },
   {
-    path: "button", component:ButtonComponent 
+    path: 'button',
+    component: ButtonComponent,
   },
   {
-    path: "button-toggle", component:ButtonToggleComponent 
+    path: 'button-toggle',
+    component: ButtonToggleComponent,
   },
   {
-    path: "chips", component:ChipsComponent 
-  }
-  ,
-  {
-    path: "dialog", component:DialogComponent 
-  }
+    path: 'chips',
+    component: ChipsComponent,
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

@@ -1,31 +1,38 @@
-.flex{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0px 20%;
+  align-items: center;
 }
 
-.exemple mat-button-toggle-group{
-    width: fit-content;
+section {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
 }
 
-:host ::ng-deep .exemple .mat-button-toggle-group {
-    border-radius: 20px;
-    height: 30px;
+h1,
+h3 {
+  align-self: center;
 }
 
-:host ::ng-deep .exemple .mat-button-toggle-group .mat-button-toggle {
-    height: 30px;
-    width: 55px;
-    display: flex;
-    align-items: center;
-    border-radius: 50% 50% 50% 50%;
+.exemple mat-button-toggle-group {
+  width: fit-content;
+  border: none;
 }
 
-:host ::ng-deep .exemple .mat-button-toggle-group .mat-button-toggle-checked {
-    background-color: #7b1fa2;
+:host ::ng-deep .exemple mat-button-toggle-group mat-button-toggle {
+  height: 30px;
+  width: 55px;
+  display: flex;
+  align-items: center;
+  border-radius: 50% 50% 50% 50%;
+  margin: 0 5px;
 }
 
-:host ::ng-deep .exemple .mat-button-toggle-group #mat-button-toggle-6 {
-    margin: 0 10px;
+:host ::ng-deep .exemple mat-button-toggle-group .mat-button-toggle-checked {
+  background-color: #7b1fa2;
 }

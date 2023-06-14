@@ -1,14 +1,32 @@
-.main-container .flex{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0px 20%;
+  align-items: center;
+}
+
+section {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+h1,
+h3 {
+  align-self: center;
+}
+
+mat-form-field {
+  width: 200px;
 }
 
 :host ::ng-deep .noIcon .mat-mdc-form-field-icon-suffix {
-    display: none;
+  display: none;
 }
 
 :host ::ng-deep .icon-color .mat-mdc-icon-button {
-    color: blue;
+  color: gray;
 }

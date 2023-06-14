@@ -1,20 +1,54 @@
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0px 20%;
+  align-items: center;
+}
+
+section {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+h1,
+h3 {
+  align-self: center;
+}
+
+:host
+  ::ng-deep
+  .default
+  .mdc-evolution-chip__graphic.mat-mdc-chip-graphic.ng-star-inserted {
+  display: block;
+}
+
+:host
+  ::ng-deep
+  .default
+  .mat-mdc-standard-chip.mat-primary.mat-mdc-chip-selected {
+  background-color: #7b1fa2;
+}
+
 :host ::ng-deep {
-
-    &.mdc-evolution-chip__graphic.mat-mdc-chip-graphic.ng-star-inserted {
+  &.mdc-evolution-chip__graphic.mat-mdc-chip-graphic.ng-star-inserted {
     display: none;
-    }
+  }
 
-    &.mdc-evolution-chip__text-label.mat-mdc-chip-action-label {
-        align-items: center;
-        display: flex;
-        padding-left: 10px;
-    }
+  &.mdc-evolution-chip__text-label.mat-mdc-chip-action-label {
+    align-items: center;
+    display: flex;
+    padding-left: 10px;
+  }
 
-    &.mat-mdc-standard-chip.mat-primary.mat-mdc-chip-selected {
-        background-color: blue;
-    }
+  &.mat-mdc-standard-chip.mat-primary.mat-mdc-chip-selected {
+    background-color: blue;
+  }
 }
 
 mat-icon {
-    padding-right: 5px;
+  padding-right: 5px;
 }

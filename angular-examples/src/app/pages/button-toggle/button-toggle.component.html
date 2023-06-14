@@ -1,16 +1,18 @@
-<div class="flex">
-  <h1>Toggle Button Exemplo</h1>
-  button-toggle: cor, forma, espaçamento
-  <div>
-    <h3>Esse é o estilo padrão do toggle button</h3>
-    <mat-button-toggle-group name="language" aria-label="Font Style">
-      <mat-button-toggle value="pt-br">pt-br</mat-button-toggle>
-      <mat-button-toggle value="en">en</mat-button-toggle>
-      <mat-button-toggle value="es">es</mat-button-toggle>
-    </mat-button-toggle-group>
-  </div>
+<article>
+  <section>
+    <h1>Toggle Button Exemplo</h1>
+    <div>
+      <h3>Esse é o estilo padrão do toggle button</h3>
+      <mat-button-toggle-group name="language" aria-label="Font Style">
+        <mat-button-toggle value="pt-br">pt-br</mat-button-toggle>
+        <mat-button-toggle value="en">en</mat-button-toggle>
+        <mat-button-toggle value="es">es</mat-button-toggle>
+      </mat-button-toggle-group>
+    </div>
+  </section>
+
   <br />
-  <div class="flex exemple">
+  <section class="exemple">
     <h3>Modificando o toggle button</h3>
     <mat-button-toggle-group name="language" aria-label="Font Style">
       <mat-button-toggle value="pt-br">pt-br</mat-button-toggle>
@@ -18,13 +20,43 @@
       <mat-button-toggle value="es">es</mat-button-toggle>
     </mat-button-toggle-group>
     <br />
-    <span
-      >Primerio vamos limitar o tamanho do toggle button, para isso não
-      aplicamos uma estilização tradicional, criando a classe e definindo o
-      estilo</span
-    >
-    <img src="../../../assets/images/button1.PNG" />
-    <img src="../../../assets/images/button1.PNG" />
-    <span></span>
-  </div>
-</div>
+    <p>
+      Primeiro passo é limitar o tamanho e remover as bordas, isso é feito
+      direto no componente, então vamos criar a classe exemple e modificar
+      apenas o componente de exemplo
+    </p>
+    <img src="../../../assets/images/toggle1.png" />
+    <img src="../../../assets/images/toggle2.png" />
+    <br />
+    <p>Segundo passo é localizar o elemento que contém o botões.</p>
+
+    <p>
+      Para isso, abra a ferramenta do desenvolvedor (DevTools / Inspecionar) e
+      selecione a parte do componente que deseja acessar.
+    </p>
+
+    <img src="../../../assets/images/toggle3.png" />
+    <img src="../../../assets/images/toggle4.png" />
+    <br />
+    <p>
+      Agora que sabemos qual elemento devemos modificar, vamos fazer a
+      modificação no nosso código.
+    </p>
+    <p>
+      Para isso, vamos utilizar a classe (exemple) para continuar nossas
+      modificações.
+    </p>
+    <p>
+      Usaremos o seletor ':host ::ng-deep' + o nome da classe que criamos + o
+      elemento que queremos modificar para aplicar o estilo.
+    </p>
+    <img src="../../../assets/images/toggle5.png" />
+    <br />
+    <p>
+      Repedindo o mesmo processo podemos descobrir qual classe é aplicada quando
+      um botão está selecionado e sobrescrever a cor.
+    </p>
+    <img src="../../../assets/images/toggle6.png" />
+    <img src="../../../assets/images/toggle7.png" />
+  </section>
+</article>

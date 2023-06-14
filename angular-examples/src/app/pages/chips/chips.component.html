@@ -1,18 +1,57 @@
-chip-set: tirar/mudar icone, tamanho dos chips
-<mat-chip-listbox aria-label="Fish selection">
-  <mat-chip-option>One fish</mat-chip-option>
-  <mat-chip-option>Two fish</mat-chip-option>
-  <mat-chip-option color="accent">Accent fish</mat-chip-option>
-  <mat-chip-option color="warn">Warn fish</mat-chip-option>
-</mat-chip-listbox>
+<article>
+  <section>
+    <h1>Chips Exemplo</h1>
+    <h3>Esse é o estilo padrão do Chips</h3>
+    <mat-chip-listbox aria-label="Fish selection" class="default">
+      <mat-chip-option>One fish</mat-chip-option>
+      <mat-chip-option>Two fish</mat-chip-option>
+      <mat-chip-option color="accent">Accent fish</mat-chip-option>
+      <mat-chip-option color="warn">Warn fish</mat-chip-option>
+    </mat-chip-listbox>
+  </section>
+  <section>
+    <h3>Removendo o ícone e adicionando outro</h3>
+    <mat-chip-listbox aria-label="Fish selection">
+      <mat-chip-option>
+        <mat-icon>thumb_up</mat-icon>
+        Like
+      </mat-chip-option>
+      <mat-chip-option color="warn">
+        <mat-icon>thumb_down</mat-icon>
+        Dislike
+      </mat-chip-option>
+    </mat-chip-listbox>
+    <br />
+    <p>Primeiro passo é localizar a classe que contém o ícone.</p>
 
-<mat-chip-listbox aria-label="Fish selection">
-  <mat-chip-option>
-    <mat-icon>thumb_up</mat-icon>
-    Like
-  </mat-chip-option>
-  <mat-chip-option color="warn">
-    <mat-icon>thumb_down</mat-icon>
-    Dislike
-  </mat-chip-option>
-</mat-chip-listbox>
+    <p>
+      Para isso, abra a ferramenta do desenvolvedor (DevTools / Inspecionar) e
+      selecione a parte do componente que deseja acessar.
+    </p>
+
+    <img src="../../../assets/images/chips1.png" />
+    <br />
+    <p>
+      Agora que sabemos qual classe devemos modificar, vamos fazer a alteração
+      em nosso código.
+    </p>
+    <p>
+      Diferente dos exemplos anteriores, desta vez vamos utilizar uma cadeia de
+      estilização para modificar todos os componentes. Primeiro, removeremos o
+      ícone de todos os componentes e, em seguida, desfaremos essa alteração
+      para restaurar o estilo do exemplo padão.
+    </p>
+    <img src="../../../assets/images/chips2.png" />
+    <img src="../../../assets/images/chips3.png" />
+    <br />
+    <p>
+      Agora, vamos adicionar os novos ícones dentro do componente e aplicar os
+      estilos necessários.
+    </p>
+    <img src="../../../assets/images/chips4.png" />
+    <img src="../../../assets/images/chips5.png" />
+    <br />
+    <p>Por último, vamos modificar a cor padrão do ícone "Like" para azul.</p>
+    <img src="../../../assets/images/chips6.png" />
+  </section>
+</article>
